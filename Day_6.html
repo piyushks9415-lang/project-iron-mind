@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Mini Project</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(60, 30, 25);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+      text-align: center;
+    }
+    header {
+      display: block;
+      width: 100%;
+    }
+    h1 {
+      color: orange;
+      font-size: 2.5em;
+      font-style: normal;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    section {
+      background-color: goldenrod;
+      border: 5px solid black;
+      border-radius: 20px;
+      margin: 5px 0;
+      padding: 50px 70px;
+    }
+    h3 {
+      color: black;
+      font-family: sans-serif;
+      font-size: 30px;
+      margin: 10px 0;
+    }
+    #checkStatus {
+      padding: 10px 15px;
+      border: 2.4px solid black;
+      border-radius: 20px;
+      background-color: lightyellow;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+    #checkStatus:hover {
+      cursor: pointer;
+      color: black;
+      box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25);
+      transform: translateY(-1px);
+      background-color: #fff3b0;
+      /* font-size: 17px; */
+      text-decoration: underline;
+    }
+    #checkStatus:active {
+      transform: translateY(1px);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <body>
+    <header>
+      <h1>--- Welcome to Nectar Tea Stall ---</h1>
+    </header>
+
+    <section>
+      <h3>Check Shop Status</h3>
+
+      <button id="checkStatus" onclick="checkStatus()">Check Status</button>
+    </section>
+
+    <script>
+      let i = 0;
+      function checkStatus() {
+        if (i == 0) {
+          alert("The Shop is closed now!");
+          i = 1;
+        } else {
+          alert("The Shop is open now!");
+          i = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
