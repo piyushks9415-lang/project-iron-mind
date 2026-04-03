@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Functions</title>
+</head>
+
+<body>
+    <!-- Functions are the reusable logic blocks that perform specific tasks. -->
+    <h2>Hello Everyone! Here we are going to learn about Functions in JS.</h2>
+
+    <button onclick="checkStatus()">Check Status</button>
+
+    <script>
+
+        /*
+                function checkStatus() {
+                    alert("The Shop is closed!");
+                }
+                checkStatus();
+        */
+
+        // Practice: 
+
+        /*   function greetingMessage() {
+            document.write("Hello Guys! Welcome to my website.");
+           }
+           greetingMessage();  */
+
+        // Challenge: 
+
+        i = 0;
+        function checkStatus() {
+
+            if (i == 0) {
+                console.log("Shop is Closed.");
+                i = 1;
+            }
+            else {
+                console.log("Shop is Open.");
+                i = 0;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
